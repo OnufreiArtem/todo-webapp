@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Todo</title>
+</head>
+<body>
+    
+    <header class="header">
+        <span class='header__title'>Your Todo List</span>
+    </header>
+    
+    <div class="container">
+        <div class="todo-panel">
+            <h1>Add task</h1>
+            <div class="add-panel">
+                <input class="add-panel__input" id="task_text_input" type="text" id="task_description">
+                <button class="add-panel__btn" id="add_btn"></button>
+            </div>
+            <div class="assigned-panel">
+                <h2 class="panel-title">Your tasks to do:</h2>
+                <p class="hintText" id="assigned_hint_text">No Tasks Assigned</p>
+                <div class="list-container" id="assigned_list_container">
+                    
+                </div>
+            </div>
+            <div class="done-panel">
+                <h2 class="panel-title">Tasks you did:</h2>
+                <p class="hintText" id="done_hint_text">No Tasks Done</p>
+                <div class="list-container" id="done_list_container">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
