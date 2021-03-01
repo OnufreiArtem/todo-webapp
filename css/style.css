@@ -100,6 +100,7 @@ h1 {
   font-size: 24px;
   transition: 0.3s all;
   outline: none;
+  cursor: pointer;
 }
 
 .add-panel__btn:after {
@@ -203,6 +204,7 @@ h1 {
   border: none;
   background-color: transparent;
   transition: 0.3s all;
+  cursor: pointer;
 }
 
 .list-item__btn:hover {
@@ -243,6 +245,10 @@ h1 {
 
 .ic_restore {
   background-image: url("./img/restore-icon.svg");
+}
+
+.crossed-text {
+  text-decoration: line-through;
 }
 
 .hintText {

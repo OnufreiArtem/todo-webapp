@@ -43,7 +43,9 @@ const getTask = ({ id, text, done }) => {
           done ? "_green" : ""
         }" title="Edit task" id="task_edit_${id}" onclick="editTask(event)"></button>
         </span>
-        <input type="text" class="list-item__text" value="${text}" id="task_input_${id}" readonly />
+        <input type="text" class="list-item__text ${
+          done ? "crossed-text" : ""
+        }" value="${text}" id="task_input_${id}" readonly />
         <span class="list-item__btn-container">
             <button class="list-item__btn ${
               done ? "ic_restore" : "ic_done_green"
