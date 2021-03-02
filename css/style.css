@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
   font-family: "Comfortaa", cursive;
   color: #333;
 }
@@ -166,7 +165,7 @@ h1 {
   background-color: white;
   border-radius: 0px;
   width: 100%;
-  box-shadow: 0 0 10px transparent;
+  box-shadow: 0 10px 10px transparent;
   margin-bottom: 5px;
   border-bottom: 4px solid #ccc;
   transition: 0.3s all;
