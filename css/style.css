@@ -1,6 +1,11 @@
+@font-face {
+  font-family: Roboto;
+  src: url("font/Roboto-Regular.ttf");
+}
+
 * {
   box-sizing: border-box;
-  font-family: "Comfortaa", cursive;
+  font-family: Roboto;
   color: #333;
 }
 
@@ -11,7 +16,7 @@ body {
   background-size: 200% 200%;
   background-repeat: no-repeat;
   background-position-x: top;
-  animation: bcg-animation 10s ease infinite;
+  animation: bcg-animation 15s ease-in-out infinite;
 }
 
 @keyframes bcg-animation {
@@ -42,7 +47,6 @@ h1 {
 .header__title {
   font-size: 28px;
   font-weight: bold;
-  font-family: "Comfortaa", cursive;
 }
 
 .container {
@@ -53,8 +57,6 @@ h1 {
 }
 
 .todo-panel {
-  max-width: 600px;
-  min-width: 500px;
   padding: 30px;
   background-color: white;
   border-radius: 5px;
@@ -165,7 +167,6 @@ h1 {
   background-color: white;
   border-radius: 0px;
   width: 100%;
-  box-shadow: 0 10px 10px transparent;
   margin-bottom: 5px;
   border-bottom: 4px solid #ccc;
   transition: 0.3s all;
@@ -174,7 +175,7 @@ h1 {
 .list-item:hover {
   border-radius: 5px;
   box-shadow: 0 0 5px #0000008e;
-  transform: translateY(-5px);
+  transform: scale(1.05);
 }
 
 .list-item__text {
